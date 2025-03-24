@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix Backend && npm install --prefix Frontend && npm run build --prefix frontend",
-    "start": "cd backend/src && npx prisma generate && cd ../.. && npm run start --prefix backend"
+    "build": "npm install --prefix Backend && npm install --prefix Frontend && npm run build --prefix Frontend",
+    "start": "cd Backend/src && npx prisma generate && cd ../.. && npm run start --prefix Backend"
   },
   "keywords": [],
   "author": "",
