@@ -5,7 +5,8 @@ const express = require("express");
 const cors = require("cors");
 const cookieparser = require("cookie-parser");
 const { app } = require("./services/socket");
-const { path } = require("path");
+const  path  = require("path");
+const __dirname = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../../Frontend/dist")));
