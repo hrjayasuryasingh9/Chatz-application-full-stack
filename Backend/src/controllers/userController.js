@@ -39,7 +39,7 @@ const userRegistration = async (req, res) => {
       is_verified,
       verificationToken
     );
-    const verificationLink = `http://localhost:3006/api/user/verify?token=${verificationToken}`;
+    const verificationLink = `https://chatz-application-full-stack.onrender.com/api/auth/verify?token=${verificationToken}`;
     const mailOptions = {
       from: '"Chat-app" <hrjayasuryasingh@gmail.com>',
       to: email,
